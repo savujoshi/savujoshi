@@ -28,6 +28,9 @@ def main_function():
     pdfFileObj.close()
 
 
+def parse_pdf():
+    pass
+
 
 if __name__=='__main__':
 
