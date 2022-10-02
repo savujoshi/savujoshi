@@ -1,0 +1,15 @@
+from PyPDF2 import PdfReader
+import re
+
+# name = input("Fullname : ")
+
+reader = PdfReader("statement-32.pdf")
+text = ""
+for x in range(0,len(reader.pages)):
+    
+    if x != 1:
+        page = reader.pages[x]
+        text = text + page.extract_text()
+
+# filter_name = text.replace("SAURAV" , "")
+print(text)   
